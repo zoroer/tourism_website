@@ -1,0 +1,743 @@
+/*common style*/
+*,body{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+a{text-decoration: none;}
+ul li{list-style-type: none; float: left;}
+img{border: none !important;}
+/*input,button{outline: none; !important;}*/
+
+/**************************************** index.php ***********************************************************/
+.nav{
+    height: 80px;
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    top:0;
+    color:#fff;
+    z-index: 9;
+    transition: all .5s ease-in-out;-moz-transition: all .5s ease-in-out;-webkit-transition: all .5s ease-in-out;-o-transition: all .5s ease-in-out;
+}
+.nav_change{
+    background: rgba(0,0,0,0.5);
+    height: 70px;
+}
+.nav_left{
+    float: left;
+    margin-left:8%;
+}
+.nav_logo{
+    height:70px;
+    width: 86px;
+    float: left;
+    background: url("../resources/img/logo2.png");
+}
+.nav_left ul{
+    margin-left: 70px;
+    float: left;
+}
+.nav_left ul li a{
+    color:#fff;
+    display: block;
+    height:70px;
+    width: 100px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 16px;
+    transition: all .4s ease-in-out;-moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;
+}
+.nav_left ul li a:hover{
+    background: #0199E6;
+    transform: rotate(360deg);-moz-transform: rotate(360deg);-webkit-transform: rotate(360deg);-o-transform: rotate(360deg);
+}
+
+.nav_right{
+    float: right;
+    margin-right: 8%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+.nav_search{
+    border-radius: 5px;
+    background: rgba(255,255,255,0.5);
+    width: 200px;
+    height:30px;
+    margin: 20px 50px 0 0;
+    text-indent: 10px;
+    float: left;
+    border: 0;
+}
+.nav_search_btn{
+    background: url("../resources/img/sprite_24.png") no-repeat -63px 8px;
+    position: absolute;
+    height:30px;
+    width:30px;
+    left:165px;
+    top:18px;
+    cursor: pointer;
+    border: 0;
+}
+.nav_logon{
+    color:#fff;
+    font-size: 14px;
+    float: left;
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+    border-radius: 45px;
+    margin-top: 15px;
+    transition: all,.8s, ease-in-out;
+    margin-right: 10px;
+}
+.nav_logon:hover{
+    background: rgba(1,153,230,0.7);
+    transform: scale(1.2,1.2);
+}
+.nav_welcome{
+    height:25px;
+    width: 60px;
+    float: left;
+    margin: 23px 70px 0 0;
+    display: none;
+    color:#fff;
+}
+.swiper-slide{
+    text-align: center;
+    color:#fff;
+    position: relative;
+}
+.swiper-slide h1,.swiper-slide p{
+    position: relative;
+    top: 270px;
+    letter-spacing: 4px;
+    margin-top: 30px;
+}
+
+/*推荐模块*/
+.recommend_block_bg,.travelPartner_block_bg{
+    background: #f1f1f1;
+}
+.recommend_block,.travelPartner_block{
+    width:1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    color:#333;
+}
+.recommend_block i,.travelPartner_block i{
+    font-size: 18px;
+}
+.recommend_block p,.travelPartner_block p{
+    font-size: 32px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.recommend_block ul li{
+    height:282px;
+    width:280px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.item{
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom: -28px;
+    transition: all .4s ease-in-out;
+}
+.item:hover{
+    bottom:0;
+    cursor: pointer;
+}
+
+.item_desc{
+    background: #fff;
+}
+.item_desc h5{
+    height: 20px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.item_desc p{
+    height: 30px;
+    font-size: 14px;
+    color: #b1b1b1;
+}
+.item_desc p i.item_location_icon{
+    display: inline-block;
+    height: 30px;
+    width: 20px;
+    background:url("../resources/img/discover_bg.png") no-repeat 0 -98px;
+    margin-left: 35%;
+    float: left;
+}
+.item_desc p .item_location{
+    display: inline-block;
+    float: left;
+}
+.recommend_more{
+    background: #E1E1E1;
+}
+.recommend_more a{
+    display: block;
+    height:282px;
+    width: 280px;
+    transition: all .4s ease-in-out;
+    color: #333;
+    padding-top: 80px;
+}
+.recommend_more a:hover{
+    color: #fff;
+    background: #2BB4FC;
+}
+.recommend_more i{
+    font-size: 26px;
+}
+.travelPartner{
+    width: 1200px;
+    margin-top: 50px;
+}
+.travelPartner_img{
+    display: block;
+    float: left;
+    width: 790px;
+    height: 445px;
+    overflow: hidden;
+    position: relative;
+}
+.travelPartner_img a img{
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+.travelPartner_img a img:hover{
+    transform: scale(1.1,1.1);
+}
+.img_block{
+    position: absolute;
+    bottom:0;
+    height:200px;
+    width: 790px;
+    line-height: 200px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.travelPartner_desc{
+    float: right;
+    width: 380px;
+    height:391px;
+    border-radius: 10px;
+    border:2px solid #ccc;
+    padding-top: 50px;
+}
+.travelPartner_desc p{
+    font-size: 24px;
+}
+.travelPartner_desc i{
+    font-size: 14px;
+    display: block;
+    float: left;
+    margin: 20px 0 0 13px;
+    color: #666;
+    font-style: normal;
+}
+.together{
+    width: 144px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #39B9FC;
+    color:#39B9FC;
+    background: transparent;
+    letter-spacing: 2px;
+    display: block;
+    margin: 50px auto 20px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+.together:hover{
+    background: #39B9FC;
+    color:#fff;
+}
+.userMess{
+    width: 380px;
+    margin-top: 80px;
+}
+.user_pic{
+    display: block;
+    height:100px;
+    width:100px;
+    border-radius: 45px;
+    background: url("../resources/img/boy.jpg") 6px;
+    cursor: pointer;
+}
+.userMess span{
+    display: block;
+    font-size: 14px;
+    color:#999;
+    margin-top: 20px;
+    text-align: left;
+    width: 215px;
+    float: right;
+}
+
+
+
+/* footer */
+.foot_nav{
+    height:150px;
+    width: 100%;
+    background: #222430;
+    position: relative;
+}
+.foot_nav ul{
+    position: relative;
+    width: 50%;
+    top:60px;
+    left:280px;
+}
+.foot_nav ul li{
+     float: left;
+    margin-left: 10%;
+}
+.foot_nav ul li a{
+    color:#999;
+    transition: all .5s ease-in-out;
+}
+.foot_nav ul li a:hover{
+    color:#fff;
+    text-decoration: underline;
+}
+.weChat{
+    float: right;
+    margin-right: 200px;
+}
+.weChat i{
+    color: #999;
+    font-size: 12px;
+    margin-left: -10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.copyright{
+    background: #222430;
+    text-align: center;
+    color:#999;
+    padding-bottom:20px;
+    letter-spacing: 1px;
+}
+/************************************************* 登录弹出框 ********************************************************/
+.login_block{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    background: none 0 0 repeat scroll rgba(0, 0, 0, .3);
+    z-index: 9998;
+    display: none;
+}
+.login_message{
+    width: 340px;
+    background: rgba(255,255,255,.9) !important;
+    border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin:-170px 0 0 -170px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    z-index: 9999;
+    text-align: center;
+    font-size: 14px;
+}
+.login_message .close{
+    height:23px;
+    width:23px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url("../resources/img/cls.png") no-repeat;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.login_message h4{
+    color:#666;
+    margin-top: 40px;
+    margin-bottom:10px;
+    font-size: 18px;
+}
+.login_content{
+    position: relative;
+}
+.login_content input{
+    border-radius: 5px;
+    background: #fff;
+    margin-top: 25px;
+    transition: all .3s ease-in-out;
+    letter-spacing: 2px;
+}
+.login_content .login_username,.login_content .login_password{
+    height:35px;
+    line-height:35px;
+    width: 250px;
+    text-indent: 15px;
+    color:#999;
+    border: 1px solid #D7D7D7;
+}
+.login_content .login_remember{
+    height:15px;
+    width: 15px;
+    position: relative;
+    top:3px;
+    left:-105px;
+}
+.login_forget_password{
+    color: #2BB4FC;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    left: 103px;
+    cursor: pointer;
+}
+.login_btn{
+    display: block;
+    height:34px;
+    width: 250px;
+    border: 1px solid #2BB4FC;
+    cursor: pointer;
+    margin: 15px 0 0  44px !important;
+    color: #2BB4FC;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all .5s ease-in-out;
+    background: #fff;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+.login_btn:hover{
+    background: #2BB4FC;
+    color:#fff;
+    box-shadow: 0 0 2px #ccc;
+}
+.jump_regist{
+    margin:20px 0;
+    font-size: 13px;
+}
+.jump_regist a{
+    color: #2BB4FC;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/*去除webkit内核的input默认黄色背景*/
+input:-webkit-autofill {
+    -webkit-box-shadow : 0 0 0 1000px white inset ;
+}
+
+
+/************************************************* 注册页 **********************************************************/
+
+.regist_bg{
+    background: url("../resources/img/regist.jpg") no-repeat center center;
+    height:800px;
+    background-size: cover;
+}
+
+.regist_box{
+    height:450px;
+    width:345px;
+    position: absolute;
+    z-index: 9999;
+    top:50%;
+    left:50%;
+    margin: -255px 0 0 -173px;
+    display: block;
+}
+.regist_title h6{
+    color:#fff;
+    font-size: 16px;
+    float: left;
+    margin: 15px 0 0 50px;
+    letter-spacing: 4px;
+}
+.regist_content{
+    width:325px;
+    background: rgba(255,255,255,0.9) !important;
+    padding-top: 20px;
+    display: block;
+    position: absolute;
+    top: 150px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.error_message{
+    height:35px;
+    line-height: 35px;
+    width: 248px;
+    border:1px solid red;
+    margin-left: 40px;
+    border-radius: 5px;
+    color:#ff0000;
+    display:none;
+    text-indent: 12px;
+    text-align: center;
+}
+.errorUp_message{
+    height:35px;
+    line-height: 35px;
+    width: 248px;
+    border:1px solid red;
+    margin-left: 40px;
+    border-radius: 5px;
+    color:#ff0000;
+    display:none;
+    text-indent: 12px;
+    text-align: center;
+}
+
+.regist_content input,.regist_content button{
+    height:35px;
+    line-height: 35px;
+    width:250px;
+    border-radius: 5px;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    text-indent: 15px;
+    margin:10px 0 0 40px;
+}
+.regist_submit{
+    cursor: pointer;
+    border:1px solid #2BB4FC !important;
+    margin:20px 0 20px 40px !important;
+    color:#4A88E4;
+    letter-spacing: 3px;
+    transition: all .5s ease-in-out;
+    font-size: 15px;
+}
+.regist_submit:hover{
+    background: #2BB4FC;
+    color:#fff;
+}
+
+/************************************************ places ***********************************************************/
+.bannerWrap{
+    height:95px;
+    width:100%;
+}
+.bannerWrapMain{
+    width: 980px;
+    height:95px;
+    margin: 0 auto;
+    color:#2b2b2b;
+}
+.bannerWrapMain span{
+    display: inline-block;
+    font-size: 38px;
+    margin-top: 40px;
+}
+.bannerWrap_location{
+    display: inline-block;
+    height:23px;
+    width: 14px;
+    background: url("../resources/img/hd_mapbtn.png") no-repeat 0 0;
+    margin-left:1.5%;
+}
+
+.placeMain_nav{
+    height:50px;
+    width:100%;
+    background: #39B9FC;
+}
+.placeMain_nav ul{
+    width: 980px;
+    margin: 0 auto;
+}
+.placeMain_nav ul li{
+    float: left;
+}
+.placeMain_nav ul li.active{
+    background: #3399FF;
+    border-radius: 10px;
+}
+.placeMain_nav ul li a{
+    display: block;
+    height:50px;
+    width: 100px;
+    color:#fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    transition: all .5s ease-in-out;
+    letter-spacing: 2px;
+}
+.placeMain_nav ul li a:hover{
+    background: #3399FF;
+    border-radius: 10px;
+}
+
+.content{
+    width: 980px;
+    margin: 0 auto 30px;
+}
+.content_left{
+    width:720px;
+    float: left;
+    margin-top: 10px;
+}
+.content_left_cityDesc{
+    margin-top: 20px;
+}
+.content_left_cityDesc img{
+    display: block;
+    float: left;
+}
+.content_left_cityDesc .city_desc{
+    float: right;
+    height:304px;
+    width: 224px;
+    overflow: hidden;
+}
+.city_desc .squ{
+    height: 0;
+    width: 0;
+    border-width: 7px;
+    border-style: dashed;
+    border-color:#ccc transparent transparent transparent;
+    margin-left: 17px;
+}
+.city_desc h5{
+    height: 30px;
+    line-height: 30px;
+    width: 50px;
+    background: #e7e7e7;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+.city_desc p{
+    color:#999;
+    text-indent: 20px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 23px;
+}
+.content_left_title{
+    width: 100%;
+    margin: 30px 0 20px 0;
+    border-bottom: 2px solid #f1f1f1;
+    clear: both;
+}
+.content_left_title p{
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    border-width:0 0 0 5px;
+    border-style: solid;
+    border-color: transparent transparent #F1F1F1 #39B9FC;
+}
+.popular_city,.popular_scenery{
+    width: 100%;
+    clear: both;
+    color: #333;
+}
+.popular_city ul li,.popular_scenery ul li{
+    float: left;
+    margin: 20px 16px 0 0;
+}
+.popular_city ul li a,.popular_scenery ul li a{
+    display: block;
+    cursor: pointer;
+}
+.city_pic{
+    display: block;
+    height: 30px;
+    width: 100%;
+    background:url("../resources/img/discover_bg.png") no-repeat 30% -98px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.content_right{
+    width: 220px;
+    float: right;
+    margin-top: 10px;
+}
+.content_right_title{
+    height: 40px;
+    margin-top: 20px;
+    border-bottom: 2px solid #c1c1c1;
+    color: #2b2b2b;
+    font-size: 20px;
+}
+.festival_desc a{
+    display: block;
+    width: 220px;
+    height: 40px;
+    color: #2b2b2b;
+    padding-top: 13px;
+}
+.festival_desc a:hover{
+    background: #F9F9F9;
+}
+.festival_desc a:hover .dot{
+     background: #39B9FC;
+ }
+.festival_desc a:hover span{
+    color: #39B9FC;
+}
+.festival_desc a .dot{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background: #EDEDED;
+    border-radius: 45px;
+}
+.festival_desc a span{
+    padding-left:15px;
+    font-size: 14px;
+}
+.festival_desc a p{
+    padding-left: 27px;
+    color:#999;
+}
+
+.recommend{
+    width: 100%;
+    text-align: center;
+    color: #999;
+    border-top: 1px solid #F7F7F7;
+}
+.recommend h2{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 23px 0 16px;
+}
+.recommend ul{
+    width: 980px;
+    margin: 0 auto;
+}
+.recommend ul li{
+    float: left;
+    width: 98px;
+    height: 18px;
+    margin: 0 30px 10px 0;
+}

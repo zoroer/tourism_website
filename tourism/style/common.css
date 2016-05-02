@@ -1,0 +1,101 @@
+/*common style*/
+*,body{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+}
+a{text-decoration: none;}
+ul li{list-style-type: none; float: left;}
+img{border: none !important;}
+
+/********************************************common nav****************************************************/
+.places_top{
+    width:100%;
+    height:45px;
+    background:#f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+    color:#333;
+    position: relative;
+}
+.place_top_left{
+    float: left;
+    padding-left: 8%;
+}
+.place_logo{
+    display: block;
+    height:39px;
+    width:45px;
+    background: url("../resources/img/logo45.png");
+    margin-top: 4px;
+}
+.place_top_right{
+    float: right;
+    padding-right: 8%;
+}
+.place_search{
+    border-radius: 5px;
+    background: rgba(255,255,255,0.5);
+    width: 200px;
+    height:30px;
+    text-indent: 10px;
+    border:1px solid #E0E0E0;
+    margin-top: 7px;
+}
+.place_search_btn{
+    background: url("../resources/img/nav_btn.png") no-repeat;
+    position: absolute;
+    height:18px;
+    width:18px;
+    cursor: pointer;
+    top:15px;
+    right:8.5%;
+}
+
+
+/********************************************common footer_white****************************************************/
+.footer_white{
+    width: 100%;
+    margin-top: 30px;
+    color:#999;
+    font-size: 12px;
+}
+.footer_container{
+    width: 980px;
+    margin: 10px auto;
+    padding: 10px 0;
+    border-top: 1px solid #f1f1f1;
+}
+.footer_up{
+    text-align: center;
+    padding: 2px 0 15px;
+}
+.footer_up a{
+    color:#666;
+    margin-left: 7%;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+.footer_up a:hover{
+    color:#39B9FC;
+    text-decoration: underline;
+}
+.footer_bottom{
+    width: 500px;
+    height:39px;
+    line-height: 39px;
+    margin: 0 auto;
+}
+.footer_logo{
+    display:block;
+    height:39px;
+    width:45px;
+    background: url("../resources/img/logo45.png");
+    margin-left: 10%;
+}
+.footer_copyright{
+    display: block;
+    margin:-37px 0 0 32%;
+    font-size: 13px;
+}
+
